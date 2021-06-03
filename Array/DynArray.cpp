@@ -116,7 +116,7 @@ DArray<T> *DArray<T>::concat(DArray<T> *first, DArray<T> *second) {
 }
 
 template<class T>
-DArray<T> *DArray<T>::GetSubArray(size_t begin, size_t end) //TODO Не работает
+DArray<T> *DArray<T>::GetSubArray(size_t begin, size_t end)
 {
     T *new_data = (T* ) calloc (end - begin + 1, sizeof(T));
     for (size_t i = begin; i <= end; i++)
